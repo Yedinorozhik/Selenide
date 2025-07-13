@@ -157,7 +157,6 @@ public class CardDeliveryOrderFormsTest {
         $("[data-test-id='date'] input").press(Keys.chord(Keys.SHIFT, Keys.HOME, Keys.DELETE)).setValue(date);
         $("[data-test-id='name'] input").setValue("Иванов Иван");
         $("[data-test-id='phone'] input").setValue("+79508504334");
-//        $("[data-test-id='agreement']").click();
         $("button.button").click();
         $("[data-test-id='agreement'].input_invalid .checkbox__text")
                 .should(Condition.visible, Duration.ofSeconds(15))
